@@ -1,0 +1,19 @@
+<h3>Temperature Converted</h3>
+<div class="card design" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      
+    </div>
+  
+Farenheit: <input type="number" [(ngModel)]="farenheit" (ngModelChange)="convertToC()">
+<br>
+Celcius: <input type="number"[(ngModel)]="celcius" (ngModelChange)="convertToF()">
+<br>
+<button type="button" class="btn btn-primary btn-lg btn-block space" (click)="convertToC()">Convert to C</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block space" (click)="convertToF()">Convert to F</button>
+</div>
+
+
+

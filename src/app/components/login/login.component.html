@@ -1,0 +1,30 @@
+<div class="card format">
+    <div class="card-header text-center design">
+      <h2>Login Form</h2>
+    </div>
+    <div class="card-body style">
+      <h5 class="card-title text-center">Please Fill In All Sections:</h5>
+      <form>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Username</label>
+            <input [(ngModel)]="userName" name="Username" type="text" class="form-control"  placeholder="Input Your Username">
+          </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">First Name</label>
+            <input [(ngModel)]="firstName" name="firstName" type="text" class="form-control"  placeholder="Type Your First Name">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Last Name</label>
+            <input [(ngModel)]="lastName" name="lastName" type="text" class="form-control"  placeholder="Type Your Last Name">
+        </div>  
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Password</label>
+            <input [(ngModel)]="password" name="password" type="text" class="form-control"  placeholder="Type Your Last Name">
+        </div> 
+        <div class="card-footer text-muted">
+            <button  (click)="login()" type="submit" class="btn btn-primary btn-lg btn-block space">User Login and Sign In</button>
+            <div *ngIf="loginError" class="alert alert-danger">
+                Login Access Not Authorized
+            </div>
+        </div>
+      

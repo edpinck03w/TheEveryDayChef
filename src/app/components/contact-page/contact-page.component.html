@@ -1,0 +1,60 @@
+<h1 class="fw-300 text-center">Contact</h1>
+    
+    <img src="assets/destacada3.jpg" alt="image">
+    
+
+<main class="container content-centered">
+<h2 class="fw-300 text-center">Fill in the next information</h2>
+
+        <form class="contact" action="#">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" placeholder="Type your name">
+
+                <label for="uemail">Email</label>
+                <input type="email" id="uemail" placeholder="Type your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Type your cellphone" required>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="umessage" cols="30" rows="10"></textarea>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Product Information</legend>
+                <label for="options">Type</label>
+                <select name="options" id="type">
+                    <option value="" disabled selected> ---Select an option---</option>
+                    <option value="">Sell</option>
+                    <option value="buy">Buy</option>
+                </select>
+
+                <label for="noProducts">Number</label>
+                <input type="number" min="0" max="100" step="5">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-contact">
+                    <label for="phone">Phone</label>
+                    <input type="radio" name="phone" value="telephone" id="telephone">
+                    <label for="radio">Email</label>
+                    <input type="radio" name="email" value="telephone" id="email">
+                </div>
+
+                <p>If you want to be contacted by phone, pelase select a day and time:</p>
+                
+                <label for="date">Date</label>
+                <input type="date" name="date" id="aDate">
+
+                <label for="hour">Hour</label>
+                <input type="time" name="hour" id="hour">
+            </fieldset>
+
+            <input class="button button-green" type="submit" value="Send">
+
+        </form>
+</main>        

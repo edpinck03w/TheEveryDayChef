@@ -1,0 +1,89 @@
+.design{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.space{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h3{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h5{
+    text-align: center;
+}
+
+/** Contact img **/
+
+.contact-img{
+    background-image: url(/assets/encuentra.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    height: 400px;
+    align-items: center
+}
+
+/** button **/
+
+.button{
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    display: block;
+    flex: 100%;
+    text-align: center;
+}
+
+.button-green{
+    background-color: #71B100;
+}
+
+.button-yellow{
+    background-color: #e08709;
+}
+
+.content-contact{
+    color: #ffffff;
+    flex: 0 0 95%;
+}
+
+.content-contact p{
+    font-size: 18px;
+}
+
+.center{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.footstyle{
+    width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**Global **/
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 120rem;
+}

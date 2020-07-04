@@ -1,0 +1,77 @@
+<div class="card format">
+    <div class="card-header text-center design">
+      <h2>To Do List Form</h2>
+    </div>
+    <div class="card-body style">
+      <h5 class="card-title text-center">Please Fill In Details:</h5>
+      <form>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Required List</label>
+            <input [(ngModel)]="model.listItema" name="listItem" type="text" class="form-control"  placeholder="Enter Your To Do List Item">
+          </div>
+        
+        <div class="form-group">
+          <div class="form-check">
+            <input [(ngModel)]="model.checkboxb" name="checkboxb" class="form-check-input" type="checkbox" >
+            <label class="form-check-label" for="gridCheck">
+              Create New Task
+            </label>
+          </div>
+        </div>
+        
+      </form>
+      
+    </div>
+    <div *ngIf="allItems.length < 1" class="alert alert-danger">
+        <h6>Please create new item on the Register Page</h6>
+    </div>
+
+    <div class="card-footer text-muted">
+        <button (click)="save()" type="submit" class="btn btn-primary btn-lg btn-block space">Register Item or Task</button>
+        <div *ngIf="alertVisible" class="alert alert-success">
+            New Item Saved!!!
+        </div>
+    </div>
+
+    </div>
+
+    <div class="spacing card">
+
+    <table *ngIf="allItems.length > 0" class="table table-border table-stripped">
+        <thead class="thead-dark">
+            <tr>
+                <th>New Task Description</th>
+                
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr *ngFor="let user of allItems">
+                <td>{{user.listItema}}</td>
+            </tr>
+                
+    
+        </tbody>
+    
+    
+    </table>
+    </div>
+    
+    
+    
+ 
+ 
+
+
+
+
+  <section class="contact-img center">
+    <div class="content-contact container">
+     <div class="footstyle">
+    <h2>Questions: Our specialists are standing by to answer you today</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sint. Expedita animi, voluptate dolorum harum autem, neque quam dolor rem iste facilis enim hic nemo?</p>
+    <a href="/contact" class="button button-yellow">Contact Us</a>
+    </div>
+    </div>
+</section>
+
