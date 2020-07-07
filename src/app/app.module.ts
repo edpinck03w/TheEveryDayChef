@@ -14,6 +14,21 @@ import { UserLoginComponent } from './components/user-login/user-login.component
 import { UserListComponent } from './components/user-list/user-list.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { LoginComponent } from './components/login/login.component';
+import { AboutPageComponent } from './components/about-page/about-page.component';
+import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
+import { GetStartedComponent } from './components/get-started/get-started.component';
+import { BmiComponent } from './components/bmi/bmi.component';
+import { CalculatorComponent } from './components/calculator/calculator.component';
+import { PlanComponent } from './components/plan/plan.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { OrderComponent } from './components/order/order.component';
+import { ReviewComponent } from './components/review/review.component';
+import { PayComponent } from './components/pay/pay.component';
+import { SurveyComponent } from './components/survey/survey.component';
+import { Adminpage1Component } from './components/adminpage1/adminpage1.component';
+import { Adminpage2Component } from './components/adminpage2/adminpage2.component';
+import { Adminpage3Component } from './components/adminpage3/adminpage3.component';
 
 
 @NgModule({
@@ -27,7 +42,22 @@ import { LoginComponent } from './components/login/login.component';
     UserLoginComponent,
     UserListComponent,
     TodoListComponent,
-    LoginComponent
+    LoginComponent,
+    AboutPageComponent,
+    HowItWorksComponent,
+    ReviewsComponent,
+    GetStartedComponent,
+    BmiComponent,
+    CalculatorComponent,
+    PlanComponent,
+    MenuComponent,
+    OrderComponent,
+    ReviewComponent,
+    PayComponent,
+    SurveyComponent,
+    Adminpage1Component,
+    Adminpage2Component,
+    Adminpage3Component
   ],
   imports: [
     BrowserModule,
