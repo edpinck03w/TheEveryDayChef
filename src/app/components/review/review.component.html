@@ -1,1 +1,46 @@
-<p>review works!</p>
+
+
+<h2>Meals you have Ordered</h2>
+There are: {{ allMenu.length }}
+
+
+<div *ngIf="allMenu.length < 1" class="alert alert-danger">
+    <h6>Please create your meal on the Order Page</h6>
+</div>
+
+<table *ngIf="allMenu.length > 0" class="table table-border table-stripped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Main Meal</th>
+            <th>Main Meal</th>
+            <th>Side 1</th>
+            <th>Side 2</th>
+            <th>Drink</th>
+            <th>Bread</th>
+            <th>Silverware</th>
+            <th>Chef</th>
+            <th>Method</th>
+                        
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let user of allMenu">
+            <td>{{user.mainmeat}}</td>
+            <td>{{user.mainveg}}</td>
+            <td>{{user.sidea}}</td>
+            <td>{{user.sideb}}</td>
+            <td>{{user.drink}}</td>
+            <td>{{user.bread}}</td>
+            <td>{{user.silverware}}</td>
+            <td>{{user.chef}}</td>
+            <td>{{user.cook}}</td>
+            
+        </tr>
+            
+
+    </tbody>
+
+
+</table>
+

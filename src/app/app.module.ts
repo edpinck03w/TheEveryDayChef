@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { I18nService } from './i18n.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
 
 import { FormsModule} from '@angular/forms';
 import { ConverterComponent } from './components/converter/converter.component';
@@ -29,7 +30,15 @@ import { SurveyComponent } from './components/survey/survey.component';
 import { Adminpage1Component } from './components/adminpage1/adminpage1.component';
 import { Adminpage2Component } from './components/adminpage2/adminpage2.component';
 import { Adminpage3Component } from './components/adminpage3/adminpage3.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { VideoListComponent } from './components/video-list/video-list.component';
 
+const appRoutes: Routes = [
+  {
+    path:"videos",
+    component: VideoListComponent,
+  }
+]
 
 @NgModule({
   declarations: [
@@ -57,14 +66,21 @@ import { Adminpage3Component } from './components/adminpage3/adminpage3.componen
     SurveyComponent,
     Adminpage1Component,
     Adminpage2Component,
-    Adminpage3Component
+    Adminpage3Component,
+    ExperienceComponent,
+    VideoListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    
+  ],
+  exports: [
+    RouterModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
+

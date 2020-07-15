@@ -22,3 +22,36 @@ export class Itema {
     listItema: string;
     checkboxb: string;
 }
+
+export class Menu {
+    mainmeat: string;
+    mainveg: string;
+    sidea: string;
+    sideb: string;
+    drink: string;
+    bread: string;
+    quantity: string;
+    discount: string;
+    chef: string;
+    cook: string;
+    silverware: string;
+    checkboxc: string;
+}
+
+export class Meal {
+    meatone: string;
+    vegetarian: string;
+    sideone: string;
+    sidetwo: string;
+    picture: string;
+    checkboxthree: string;
+}
+
+export class Survey {
+    firstNamea: string;
+    lastNameb: string;
+    quality: number;
+    meal: string;
+    review: number;
+    recommend: string;
+}

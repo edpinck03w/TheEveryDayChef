@@ -1,1 +1,52 @@
-<p>bmi works!</p>
+<div class="page">
+
+	<h2>BMI Calculator - Strings from a stream</h2>
+
+	<p>Take legend strings and colors from a stream</p>
+	<ul>
+		<li>Taking legend information from a stream might seem a bit of overhead, but in a real application they actually come from
+			a service call or a store, so lets keep them so.</li>
+		<li><code>withLatestFrom</code> is just fine to combine the strings if the are constant throughout app lifespan. For a localizable
+			app though, user might want to switch the language at any time and see themchange immediately. in order to be able to
+			react to this change, we should use <code>combineLatest</code> then.</li>
+	</ul>
+	<div class="playground">
+		<div class="inputs">
+			<div class="height">
+				<label>Height:</label>
+				<p>
+					<input type="range" #heightSlider min="50" max="250" [value]="heightValue$ | async">
+				</p>
+				<p>
+					<input type="number" #heightField [value]="heightValue$ | async">
+				</p>
+				<p>
+					{{heightValue$ | async}} cm
+				</p>
+			</div>
+			<div class="weight">
+
+				<label>Weight:</label>
+				<p>
+					<input type="range" #weightSlider min="10" max="300" [value]="weightValue$ | async">
+				</p>
+				<p>
+					<input type="number" #weightField [value]="weightValue$ | async">
+				</p>
+				<p>
+					{{weightValue$ | async}} kg
+				</p>
+			</div>
+		</div>
+		<div class="language">
+			<select #lang>
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+      </select>
+		</div>
+		<div class="bmi" [style.background-color]="(bmiLegend$ | async).color">
+
+			BMI: <strong>{{ bmi$ | async }}</strong> ({{(bmiLegend$ | async)?.text}})
+		</div>
+	</div>

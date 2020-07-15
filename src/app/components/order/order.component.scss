@@ -1,0 +1,101 @@
+.design{
+    background-color: rgba(30, 46, 169, 1);
+    color: white;
+}
+
+.format{
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    margin-bottom: 3rem;
+}
+
+.style{
+    background-color: rgba(244, 245, 245, 1);
+}
+
+html{
+    font-size: 62.5%
+}
+
+*, *:before,*:after{
+    box-sizing: inherit;
+}
+
+/*body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+   
+}
+*/
+/**Global **/
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 120rem;
+}
+
+
+
+/** button **/
+
+.button{
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    display: block;
+    flex: 100%;
+    text-align: center;
+}
+
+.button-green{
+    background-color: #71B100;
+}
+
+.button-yellow{
+    background-color: #e08709;
+}
+
+
+/** Contact img **/
+
+.contact-img{
+    background-image: url(/assets/encuentra.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    height: 400px;
+    align-items: center
+}
+
+.content-contact{
+    color: #ffffff;
+    flex: 0 0 95%;
+}
+
+.content-contact p{
+    font-size: 18px;
+}
+
+.center{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.footstyle{
+    width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+}

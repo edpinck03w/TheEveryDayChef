@@ -1,0 +1,9 @@
+
+<h1 class="styles">{{title}}</h1>
+<div *ngFor='let item of videoList' >
+    
+    
+    <div [innerHTML]='someItem'></div>
+  <div><iframe width="800" height="650" [src]="getEmbedURL(item)" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>

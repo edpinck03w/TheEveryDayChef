@@ -22,18 +22,22 @@ import { SurveyComponent } from './components/survey/survey.component';
 import { Adminpage1Component } from './components/adminpage1/adminpage1.component';
 import { Adminpage2Component } from './components/adminpage2/adminpage2.component';
 import { Adminpage3Component } from './components/adminpage3/adminpage3.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { VideoListComponent } from './components/video-list/video-list.component';
 
 // register the routes (paths) for your pages
 const routes: Routes = [
   { path: '', component: MainPageComponent},
   { path: 'about', component: AboutPageComponent },
   { path: 'howitworks', component: HowItWorksComponent },
+  { path: 'experience', component: ExperienceComponent },
   { path: 'reviews', component: ReviewsComponent },
   { path: 'contact', component: ContactPageComponent},
   { path: 'converter', component: ConverterComponent},
   { path: 'user/register', component: UserRegisterComponent},
   { path: 'user/list', component: UserListComponent},
   { path: 'getstarted', component: GetStartedComponent },
+  { path: 'video-list', component: VideoListComponent},
   { path: 'bmi', component: BmiComponent },
   { path: 'calculator', component: CalculatorComponent },
   { path: 'plan', component: PlanComponent },

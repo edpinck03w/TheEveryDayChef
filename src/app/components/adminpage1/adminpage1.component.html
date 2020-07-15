@@ -1,1 +1,86 @@
-<p>adminpage1 works!</p>
+<div class="card format">
+    <div class="card-header text-center design">
+      <h2>New Meal Request Form</h2>
+    </div>
+    <div class="card-body style">
+      <h5 class="card-title text-center">Please Fill In All Sections:</h5>
+      <form>
+        <div class="form-group">
+            <label class="col-4 col-form-label">Main Dish Selection (Meat)</label>
+            <div class="col-8">
+            <select [(ngModel)]="model.meatone" name="meatone" type="text" class="custom-select"  placeholder="Select Your Main Course">
+                <option>Chicken Parmasean</option>
+                <option>New York Tenderloin</option>
+                <option>Lobster Tail</option>
+            </select>
+            </div>
+        </div> 
+         <div class="form-group">
+            <label class="col-4 col-form-label">Main Dish Selection (Vegetarian)</label>
+            <div class="col-8">
+            <select [(ngModel)]="model.vegetarian" name="vegetarian" type="text" class="custom-select"  placeholder="Select Your Main Course">
+                <option>Vegetable Souflea</option>
+                <option>Broccili Cheese Chowder</option>
+                <option>Eggplant Parmasean</option>
+            </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-4 col-form-label">Side Dish 1</label>
+            <div class="col-8">
+            <select [(ngModel)]="model.sideone" name="sideone" type="text" class="custom-select"  placeholder="Select Your Main Course">
+                <option>Sweet Corn</option>
+                <option>Sweet Peas</option>
+                <option>Broccoli</option>
+            </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-4 col-form-label">Side Dish 2</label>
+            <div class="col-8">
+            <select [(ngModel)]="model.sidetwo" name="sidetwo" type="text" class="custom-select"  placeholder="Select Your Main Course">
+                <option>Succatash</option>
+                <option>Red Rice with Sausage</option>
+                <option>White Rice with Sauce</option>
+            </select>
+            </div>
+        </div>
+         <div class="form-group col-md-6">
+            <label for="inputEmail4">Image</label>
+            <input [(ngModel)]="model.picture" name="picture" type="text" class="form-control" >
+          </div>
+        
+            
+          
+         
+        <div class="form-group">
+          <div class="form-check">
+            <input [(ngModel)]="model.checkboxthree" name="checkboxthree" class="form-check-input" type="checkbox" >
+            <label class="form-check-label" for="gridCheck">
+              Confirm Your Order
+            </label>
+          </div>
+        </div>
+        
+      </form>
+      
+    </div>
+    <div class="card-footer text-muted">
+        <button (click)="save()" type="submit" class="btn btn-primary btn-lg btn-block space">Register Item or Task</button>
+        <div *ngIf="alertVisible" class="alert alert-success">
+            New Item Saved!!!
+        </div>
+    </div>
+  </div>
+ 
+  <section class="contact-img center">
+    <div class="content-contact container">
+     <div class="footstyle">
+    <h2>Questions: Our specialists are standing by to answer you today</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sint. Expedita animi, voluptate dolorum harum autem, neque quam dolor rem iste facilis enim hic nemo?</p>
+    <a href="/contact" class="button button-yellow">Contact Us</a>
+    </div>
+    </div>
+</section>
+
+

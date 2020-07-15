@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/user';
 import { DataService } from 'src/app/services/data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-register',
   templateUrl: './user-register.component.html',
   styleUrls: ['./user-register.component.scss']
 })
+
 export class UserRegisterComponent implements OnInit {
 
 
@@ -14,7 +16,9 @@ export class UserRegisterComponent implements OnInit {
   retypePass = '';
   alertVisible = false;
 
-  constructor( private data: DataService) { }
+  constructor( private data: DataService, private router : Router) { 
+    
+  }
 
   ngOnInit() {
     console.log('user register ngOnInit');
@@ -35,6 +39,16 @@ export class UserRegisterComponent implements OnInit {
 
     this.alertVisible = true;
     setTimeout(() => this.alertVisible = false, 2000);
-
+    
   }
+  
+  login(){
+    //travel the list of users
+    //compare each user credentials with values from the form
+
+            
+        this.router.navigate(['/login']);
+    
+    }
+ 
 }

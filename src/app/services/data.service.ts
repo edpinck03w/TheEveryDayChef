@@ -1,16 +1,19 @@
 import { Injectable } from '@angular/core';
-import { User, Itema } from '../models/user';
+import { User, Itema, Menu, Meal } from '../models/user';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+  
   saveItem(model: User) {
     throw new Error("Method not implemented.");
   }
 
   userList: User[] = [];
   userItem: Itema[] = [];
+  userMenu: Menu [] = [];
+  userMeal: Meal [] = [];
 
   constructor() { 
     //create default user info
@@ -30,5 +33,11 @@ export class DataService {
   }
   saveItema(itema){
     this.userItem.push(itema);
+  }
+  saveMenu(menu){
+    this.userMenu.push(menu);
+  }
+  saveMeal(meal){
+    this.userMeal.push(meal);
   }
 }

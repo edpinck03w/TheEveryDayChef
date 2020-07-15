@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Menu } from 'src/app/models/user';
+import { DataService } from 'src/app/services/data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-review',
@@ -6,8 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./review.component.scss']
 })
 export class ReviewComponent implements OnInit {
+  model = new Menu();
+  allMenu: Menu []=[];
+  alertVisible = false;
 
-  constructor() { }
+  constructor( private data: DataService) {
+    this.allMenu = data.userMenu;
+    console.log(data.userMenu);
+   }
 
   ngOnInit(): void {
   }

@@ -1,1 +1,23 @@
-<p>menu works!</p>
+<h2>Current Meal Options</h2>
+There are: {{ allMeal.length }} Custom Choices
+
+
+<div *ngIf="allMeal.length < 1" class="alert alert-danger">
+    <h6>Please create your meal on the Order Page</h6>
+</div>
+
+
+
+<div *ngIf="allMeal.length > 0">
+<div *ngFor="let user of allMeal" class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{user.meatone}}</h5>
+    <p class="card-text">Enjoy this meal prepared by one of our certiifed chefs. We recommend {{user.sideone}} with our delicious {{user.sidetwo}}. This is the perfect meal for one or a whole family. </p>
+    <a href="#" class="btn btn-primary">Select</a>
+  </div>
+</div>
+</div>
+
+
+           
