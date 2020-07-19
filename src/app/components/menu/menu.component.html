@@ -12,7 +12,7 @@ There are: {{ allMeal.length }} Custom Choices
 
 <div *ngIf="allMeal.length > 0" >
 <div class="card item" style="width: 18rem;" *ngFor="let user of allMeal">
-  <img class="card-img-top" src="..." alt="Card image cap">
+  <img class="card-img-top" src="{{user.picture}}" alt="Card image cap">
   <div class="card-body" >
     <h5 class="card-title">{{user.meatone}}</h5>
     <p class="card-text">Enjoy this meal prepared by one of our certiifed chefs. We recommend {{user.sideone}} with our delicious {{user.sidetwo}}. This is the perfect meal for one or a whole family. </p>
