@@ -13,7 +13,7 @@ export class MenuComponent implements OnInit {
   allMeal: Meal []=[];
   alertVisible = false;
 
-  constructor( private data: DataService) {
+  constructor( private data: DataService, private router : Router,) {
     this.allMeal = data.userMeal;
     console.log(data.userMeal);
    }
@@ -21,4 +21,10 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  login(){
+    
+        // send the user to the register page
+        this.router.navigate(['/order']);
+      }
 }
+

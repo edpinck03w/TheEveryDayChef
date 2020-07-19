@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
         this.shared.userName = user.userName;
 
         // send the user to the register page
-        this.router.navigate(['/getstarted']);
+        this.router.navigate(['/video-list']);
       }
     }
 

@@ -27,21 +27,17 @@
         <li class="nav-item"*ngIf="!shared.isUserLoggedIn" >
           <a class="nav-link" routerLink="/reviews">Reviews</a>
         </li>
+        
         <li class="nav-item " *ngIf="shared.isUserLoggedIn">
-          <a class="nav-link" routerLink="/getstarted">Get Started <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item " *ngIf="shared.isUserLoggedIn">
-          <a class="nav-link" routerLink="/video-list">Video List <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="/video-list">Get Started <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item " *ngIf="shared.isUserLoggedIn">
           <a class="nav-link" routerLink="/bmi">BMI <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item " *ngIf="shared.isUserLoggedIn">
-          <a class="nav-link" routerLink="/calculator">Calculator <span class="sr-only">(current)</span></a>
+        <li class="nav-item" *ngIf="shared.isUserLoggedIn">
+          <a class="nav-link" routerLink="/converter">Meal Temperature</a>
         </li>
-        <li class="nav-item " *ngIf="shared.isUserLoggedIn">
-          <a class="nav-link" routerLink="/plan">Plan <span class="sr-only">(current)</span></a>
-        </li>
+        
         <li class="nav-item " *ngIf="shared.isUserLoggedIn">
           <a class="nav-link" routerLink="/menu">Menu <span class="sr-only">(current)</span></a>
         </li>
@@ -66,9 +62,7 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/contact">Contact</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/converter">Converter</a>
-        </li>
+        
         <li class="nav-item " *ngIf="shared.isUserLoggedIn" >
           <a class="nav-link" routerLink="/adminpage1">Admin Page 1 <span class="sr-only">(current)</span></a>
         </li>

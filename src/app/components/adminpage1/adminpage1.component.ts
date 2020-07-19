@@ -19,17 +19,14 @@ export class Adminpage1Component implements OnInit {
   }
 
   ngOnInit() {
-    console.log('user register ngOnInit');
+    console.log('user meal ngOnInit');
   }
 
-  isDataCorrect(){
-    return this.model.meatone && this.model.vegetarian && this.model.sideone && this.model.sidetwo == this.retypePass;
-  }
-
+ 
   save(){
     console.log('saving', this.model);
 
-    this.data.saveUser(this.model);
+    this.data.saveMeal(this.model);
 
     // clear the form
     this.model = new Meal(); // reinitialize the object in the memory
