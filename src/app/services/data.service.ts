@@ -25,6 +25,14 @@ export class DataService {
 
     this.userList.push(admin);
 
+    var meala = new Meal ();
+    meala.meatone = "BBQ Burger";
+    meala.vegetarian = "lettuce";
+    meala.sideone = "organic fries";
+    meala.sidetwo = "asphagarus";
+    meala.picture = "/assets/burger2.png";
+
+    this.userMeal.push(meala);
   }
 
   saveUser(user){

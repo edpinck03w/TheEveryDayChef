@@ -7,6 +7,7 @@ export class SharedService {
 
   isUserLoggedIn = false;
   userName = '';
+  loggedUser = false;
 
   constructor() { }
 }

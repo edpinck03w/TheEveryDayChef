@@ -15,6 +15,7 @@ export class MenuComponent implements OnInit {
 
   constructor( private data: DataService, private router : Router,) {
     this.allMeal = data.userMeal;
+    
     console.log(data.userMeal);
    }
 

@@ -16,6 +16,7 @@ export class User {
     state: string;
     zip: string;
     checkbox: string;
+    isAdmin: boolean;
 }
 
 export class Itema {
