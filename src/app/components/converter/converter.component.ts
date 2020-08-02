@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-converter',
@@ -10,10 +11,22 @@ export class ConverterComponent implements OnInit {
   farenheit = 0.0;
   celcius = 0.0;
 
-  constructor() { }
+  constructor( private router : Router,) {
+    
+   }
 
   ngOnInit(): void {
   }
+  next(){
+    
+    // send the user to the register page
+    this.router.navigate(['/menu']);
+  }
+  back(){
+    
+    // send the user to the register page
+    this.router.navigate(['/bmi']);
+  } 
 
   convertToC(){
         // (100°F − 32) × 5/9 = 37.778°C

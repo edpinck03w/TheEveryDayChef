@@ -27,5 +27,15 @@ export class MenuComponent implements OnInit {
         // send the user to the register page
         this.router.navigate(['/order']);
       }
+  next(){
+    
+        // send the user to the register page
+        this.router.navigate(['/order']);
+      }
+  back(){
+        
+        // send the user to the register page
+        this.router.navigate(['/converter']);
+      }    
 }
 

@@ -56,21 +56,18 @@
         <li class="nav-item " *ngIf="shared.isUserLoggedIn">
           <a class="nav-link" routerLink="/survey">Survey <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item " *ngIf="shared.isUserLoggedIn" >
-          <a class="nav-link" routerLink="/user/list">User List <span class="sr-only">(current)</span></a>
-        </li>
+        
         <li class="nav-item">
           <a class="nav-link" routerLink="/contact">Contact</a>
         </li>
-        
         <li class="nav-item " *ngIf="shared.isUserLoggedIn ">
-          <a class="nav-link" routerLink="/adminpage1">Admin Page 1 <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="/adminpage1">Admin: Menu Admin<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item " *ngIf="shared.isUserLoggedIn" >
-          <a class="nav-link" routerLink="/adminpage2">Admin Page 2 <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="/adminpage2">Admin: Survey Response <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item " *ngIf="shared.isUserLoggedIn" >
-          <a class="nav-link" routerLink="/adminpage3">Admin Page 3 <span class="sr-only">(current)</span></a>
+      <li class="nav-item " *ngIf="shared.isUserLoggedIn" >
+          <a class="nav-link" routerLink="/user/list">Admin: User List <span class="sr-only">(current)</span></a>
         </li>
         
       </ul>
@@ -79,7 +76,7 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
       <form *ngIf="shared.isUserLoggedIn" class="form-inline my-2 my-lg-0">
-        <h4>Welcome Back</h4>
+        <h4 >Welcome Back  </h4>
         
       </form>
     </div>

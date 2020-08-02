@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from 'src/app/services/shared.service';
+import { User } from 'src/app/models/user';
+import { DataService } from 'src/app/services/data.service';
 
 
 
@@ -12,7 +14,7 @@ export class NavBarComponent implements OnInit {
 
   
 
-  constructor(public shared: SharedService) {
+  constructor(public shared: SharedService, private data: DataService) {
     
    }
 

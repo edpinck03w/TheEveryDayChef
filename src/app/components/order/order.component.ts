@@ -21,7 +21,16 @@ export class OrderComponent implements OnInit{
   ngOnInit() {
     console.log('user register ngOnInit');
   }
-
+  next(){
+    
+    // send the user to the register page
+    this.router.navigate(['/todo']);
+  }
+  back(){
+    
+    // send the user to the register page
+    this.router.navigate(['/menu']);
+  } 
   
   save(){
     console.log('saving', this.model);

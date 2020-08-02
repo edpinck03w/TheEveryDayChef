@@ -9,9 +9,19 @@
             <label class="col-4 col-form-label">Main Dish Selection (Meat)</label>
             <div class="col-8">
             <select [(ngModel)]="model.mainmeat" name="mainmeat" type="text" class="custom-select"  placeholder="Select Your Main Course">
-                <option>Chicken Parmasean</option>
-                <option>New York Tenderloin</option>
-                <option>Lobster Tail</option>
+                 <option>Steak: Sirloin Steak</option>
+                <option>Steak: New York Tenderloin</option>
+                <option>Steak: Rib Eye Steak</option>
+                <option>Steak: Skirt Steak</option>
+                <option>Chicken: Chicken Parmasean</option>
+                <option>Chicken: Chicken Marsala</option>
+                <option>Chicken: Baked Chicken</option>
+                <option>Chicken: Fried Chicken</option>
+                <option>Seafood: Flounder</option>
+                <option>Seafood: Fried Fish</option>
+                <option>Seafood: Crab</option>
+                <option>Seafood: Fried Shrimp</option>
+                <option>Seafood: Lobster Tail</option>
             </select>
             </div>
         </div> 
@@ -29,9 +39,24 @@
             <label class="col-4 col-form-label">Side Dish 1</label>
             <div class="col-8">
             <select [(ngModel)]="model.sidea" name="sidea" type="text" class="custom-select"  placeholder="Select Your Main Course">
-                <option>Sweet Corn</option>
+                 <option>Sweet Corn</option>
                 <option>Sweet Peas</option>
                 <option>Broccoli</option>
+                <option>Asparagus</option>
+                <option>Baked Beans</option>
+                <option>Steamed Broccoli</option>
+                <option>Cabbage</option>
+                <option>Coleslaw</option>
+                <option>Cauliflower</option>
+                <option>French Fries</option>
+                <option>Green Beans</option>
+                <option>Macaroni Salad</option>
+                <option>Macaroni and Cheese</option>
+                <option>Mashed Potatoes</option>
+                <option>Mushrooms</option>
+                <option>Pasta Salad</option>
+                <option>Potato Salad</option>
+                <option>Squash</option>
             </select>
             </div>
         </div>
@@ -39,9 +64,24 @@
             <label class="col-4 col-form-label">Side Dish 2</label>
             <div class="col-8">
             <select [(ngModel)]="model.sideb" name="sideb" type="text" class="custom-select"  placeholder="Select Your Main Course">
-                <option>Succatash</option>
-                <option>Red Rice with Sausage</option>
-                <option>White Rice with Sauce</option>
+                 <option>Sweet Corn</option>
+                <option>Sweet Peas</option>
+                <option>Broccoli</option>
+                <option>Asparagus</option>
+                <option>Baked Beans</option>
+                <option>Steamed Broccoli</option>
+                <option>Cabbage</option>
+                <option>Coleslaw</option>
+                <option>Cauliflower</option>
+                <option>French Fries</option>
+                <option>Green Beans</option>
+                <option>Macaroni Salad</option>
+                <option>Macaroni and Cheese</option>
+                <option>Mashed Potatoes</option>
+                <option>Mushrooms</option>
+                <option>Pasta Salad</option>
+                <option>Potato Salad</option>
+                <option>Squash</option>
             </select>
             </div>
         </div>
@@ -119,7 +159,12 @@
         </div>
     </div>
   </div>
- 
+
+ <div class="navigation">
+<button  (click)="back()" type="button" class="btn btn-primary">Back</button>
+<button  (click)="next()" type="button" class="btn btn-primary spacing" >Next</button>
+</div>
+
   <section class="contact-img center">
     <div class="content-contact container">
      <div class="footstyle">

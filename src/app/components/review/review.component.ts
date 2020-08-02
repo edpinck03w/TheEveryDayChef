@@ -13,12 +13,21 @@ export class ReviewComponent implements OnInit {
   allMenu: Menu []=[];
   alertVisible = false;
 
-  constructor( private data: DataService) {
+  constructor( private data: DataService, private router : Router,) {
     this.allMenu = data.userMenu;
     console.log(data.userMenu);
    }
 
   ngOnInit(): void {
   }
-
+  next(){
+    
+    // send the user to the register page
+    this.router.navigate(['/pay']);
+  }
+  back(){
+    
+    // send the user to the register page
+    this.router.navigate(['/todo']);
+  }  
 }

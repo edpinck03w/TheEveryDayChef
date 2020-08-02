@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { of, fromEvent, Observable, merge, combineLatest } from 'rxjs';
 import { tap, map, startWith, share, withLatestFrom } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bmi',
@@ -34,6 +35,10 @@ export class BmiComponent implements OnInit {
     { text: 'Obese Class II' },
     { text: 'Obese Class III' },
   ]);
+
+  constructor( private router : Router,) {
+    
+   }
 
   legendColors$: Observable<string[]> = of([
     '#fff',
@@ -84,6 +89,16 @@ export class BmiComponent implements OnInit {
       map(([index, legends]) => legends[index]),
     );
   }
+  next(){
+    
+    // send the user to the register page
+    this.router.navigate(['/converter']);
+  }
+back(){
+    
+    // send the user to the register page
+    this.router.navigate(['/video-list']);
+  } 
 
   private computeBmi(height: number, weight: number): number {
     const bmi = (weight / ((height / 100) * (height / 100)));

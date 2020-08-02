@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pay',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PayComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router,) { }
 
   ngOnInit(): void {
   }
-
+  next(){
+    
+    // send the user to the register page
+    this.router.navigate(['/survey']);
+  }
+  back(){
+    
+    // send the user to the register page
+    this.router.navigate(['/review']);
+  } 
 }
